@@ -1,7 +1,9 @@
-package main
+package gofizzbuzz
 
 import "fmt"
 
-func main() {
-	fmt.Printf("Hello, world.\n")
+// GoFizzBuzz ... FizzBuzz implementation
+func GoFizzBuzz(i int) string {
+	//TODO
+	return fmt.Sprintf("%d", i)
 }
