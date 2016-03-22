@@ -9,12 +9,11 @@ import (
 )
 
 func main() {
-	stringNumbers := os.Args[1:]
-	for _, stringNumber := range stringNumbers {
-		intNumber, err := strconv.Atoi(stringNumber)
+	for _, s := range os.Args[1:] {
+		i, err := strconv.Atoi(s)
 		if err == nil {
-			word := gofizzbuzz.GoFizzBuzz(intNumber)
-			fmt.Println(word)
+			w := gofizzbuzz.GoFizzBuzz(i)
+			fmt.Println(w)
 		}
 	}
 }
